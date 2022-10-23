@@ -14,3 +14,21 @@ Docker学习
 
 **containerd(高级容器运行时):** containerd是 Docker 服务端的一个核心组件，它是从dockerd中剥离出来的 ，它的诞生完全遵循 OCI 标准，是容器标准化后的产物。containerd通过 containerd-shim 启动并管理 runC，可以说containerd真正管理了容器的生命周期。
 ![image](https://camo.githubusercontent.com/20a61d9135e516baabace4960c5fb2d65eca1fa34e1db796cadd7a724a90d203/68747470733a2f2f6368656e677a773235382e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f41727469636c652f32303232303733303039353933392e706e67)
+
+## 3.Docker镜像操作
+1. 拉取镜像
+```
+docker pull 镜像名称[:版本号]
+```
+2. 删除镜像
+```
+docker rmi 镜像ID
+```
+3. 查看本地镜像
+```
+docker images
+```
+4. 修改镜像名称
+```
+docker tag 镜像id 新镜像名称:版本
+```
