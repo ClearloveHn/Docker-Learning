@@ -33,4 +33,27 @@ docker images
 docker tag 镜像id 新镜像名称:版本
 ```
 ## 4.Docker容器操作
+1. 创建并运行容器
+```
+docker run
+-it 交互
+-d  后台
+-p  端口映射
+-v  磁盘挂载
 
+举例:
+docker run -d -p宿主机端口∶容器端口 --name 容器名称 镜像的标识镜像名称[:tag]  //本地镜像创建容器
+```
+2. 启动已中止的容器
+```
+docker start 容器ID
+```
+3. 关闭容器
+```
+docker stop 容器ID
+```
+4. 查看容器
+```
+docker ps //查看目前开启的容器有哪些
+docker ps -a //查看有哪些容器
+```
