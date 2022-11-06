@@ -42,7 +42,8 @@ docker run
 -v  磁盘挂载
 
 举例:
-docker run -d -p宿主机端口∶容器端口 --name 容器名称 镜像的标识镜像名称[:tag]  //本地镜像创建容器
+docker run -d -p宿主机端口∶容器端口 --name 容器名称 镜像的标识(镜像ID)  //本地镜像创建容器
+docker run -it --name 容器名称 镜像ID
 ```
 2. 启动已中止的容器
 ```
@@ -56,4 +57,9 @@ docker stop 容器ID
 ```
 docker ps //查看目前开启的容器有哪些
 docker ps -a //查看有哪些容器
+```
+5. 进入容器
+```
+docker exec -it 容器id bash
+
 ```
