@@ -61,5 +61,4 @@ docker ps -a //查看有哪些容器
 5. 进入容器
 ```
 docker exec -it 容器id bash
-
 ```
